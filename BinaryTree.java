@@ -39,10 +39,7 @@ public class BinaryTree
      */
     public boolean isMinHeap()
     {
-        if(root == null){
-            return true;
-        }
-        return isMinHeap(root);
+        return root == null || isMinHeap(root);
     }
    
     private boolean isMinHeap(TreeNode t)
@@ -65,12 +62,7 @@ public class BinaryTree
      */
     public boolean isMaxHeap()
     {
-        //Exercise 3b
-        //to be completed in lab
-         if(root == null){
-            return true;
-        }
-        return isMaxHeap(root);
+        return root == null || isMaxHeap(root);
     }
 
     private boolean isMaxHeap(TreeNode t)
